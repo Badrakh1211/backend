@@ -34,6 +34,7 @@ export const createPost = async (input: {
   userImage: string;
   longitude: string;
   latitude: string;
+  type: string;
 }) => {
   try {
     const result = await prisma.post.create({ data: input });

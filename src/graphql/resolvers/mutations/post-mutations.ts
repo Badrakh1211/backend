@@ -16,6 +16,7 @@ export const postMutations = {
         userImage: string;
         latitude: string;
         longitude: string;
+        type: string;
       };
     }
   ) => createPost(input),

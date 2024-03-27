@@ -17,6 +17,7 @@ export const postTypeDefs = gql`
     latitude: String
     longitude: String
     imageUrl: String!
+    type: String!
     comments: [Comment]
   }
 
@@ -28,6 +29,7 @@ export const postTypeDefs = gql`
     imageUrl: String!
     username: String!
     userImage: String!
+    type: String!
   }
 
   input CommentCreateInput {

@@ -22,6 +22,7 @@ model Post {
   latitude    String
   longitude   String
   imageUrl    String
+  type        String
   comments    Comment[]
 }
 
