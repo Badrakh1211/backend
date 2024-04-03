@@ -33,4 +33,5 @@ model Comment {
   text     String
   username String
   imageUrl String
+  userId   String
 }

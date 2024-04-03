@@ -23,7 +23,7 @@ export const postMutations = {
   deletePost: (_: unknown, { id }: { id: string }) => deletePost(id),
   updatePost: (_: unknown, { id, input }: { id: string; input: { id: string; description: string; cord: string; imageUrl: string } }) =>
     updatePost(id, input),
-  createComment: (_: unknown, { input }: { input: { postId: string; text: string; username: string; imageUrl: string } }) =>
+  createComment: (_: unknown, { input }: { input: { postId: string; text: string; username: string; imageUrl: string; userId: string } }) =>
     createComment(input),
   deleteComment: (_: unknown, { id }: { id: string }) => deleteComment(id),
 };

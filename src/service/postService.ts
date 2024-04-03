@@ -68,14 +68,15 @@ export const updatePost = async (id: string, input: Prisma.PostUpdateInput) => {
   }
 };
 
-export const createComment = async (input: { postId: string; text: string; username: string; imageUrl: string }) => {
-  const { text, postId, username, imageUrl } = input;
+export const createComment = async (input: { postId: string; text: string; username: string; imageUrl: string; userId: string }) => {
+  const { text, postId, username, imageUrl, userId } = input;
   try {
     const result = await prisma.comment.create({
       data: {
         text,
         username,
         imageUrl,
+        userId,
         post: {
           connect: { id: postId },
         },

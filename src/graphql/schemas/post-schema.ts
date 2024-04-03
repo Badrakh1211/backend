@@ -7,6 +7,7 @@ export const postTypeDefs = gql`
     username: String!
     imageUrl: String!
     text: String!
+    userId: ID!
   }
   type Post {
     id: ID!
@@ -37,6 +38,7 @@ export const postTypeDefs = gql`
     text: String!
     username: String!
     imageUrl: String!
+    userId: String!
   }
 
   type Query {
