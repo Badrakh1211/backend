@@ -42,7 +42,7 @@ export const postTypeDefs = gql`
   }
 
   type Query {
-    getPosts: [Post]
+    getPosts: [Post!]!
     getPost(id: ID!): Post
   }
 
